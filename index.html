@@ -4,301 +4,539 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>SportsHackathon</title>
+    <title>HackLikeWaCC_v2</title>
+    <meta name="" content="">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Inline">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Brands.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md sticky-top bg-white">
-        <div class="container-fluid"><button data-toggle="collapse" data-target="navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><button class="navbar-toggler" data-toggle="collapse" data-target="navcol-2"><div class="btn-group float-right" role="group"><a class="btn btn-primary" role="button" style="background-color: #cb6ce6;font-family: Bungee, cursive;" href="https://join.slack.com/t/hacklikewcchackathon/shared_invite/enQtODExMTQ0MzQxODU4LTRiZjY4MWVhNjRlY2M4M2YyNWRjZWY4ZDg2Nzc5NGY0ZmE5MjgxYTM3N2UxZWJhNDk1ZjE0NWQ1YzBiMzU3NjU"><i class="fa fa-slack"></i></a><a class="btn btn-primary" role="button" style="background-color: #56c9c1;font-family: Bungee, cursive;" href="https://hack-like-w-cc.devpost.com/"><i class="fa fa-star"></i></a></div></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1" style="font-family: Bungee, cursive;">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#about">About</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#schedule">Schedule</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Challenges</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#faq">FAQ</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#resources">Resources</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#location">Location</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#sponsers">Sponsors</a></li>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean sticky-top">
+        <div class="container"><a class="navbar-brand" href="#">Hack Like W@CC</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1" style="font-family: Montserrat, sans-serif;">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#about" style="font-family: Montserrat, sans-serif;font-weight: 500;">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#schedule" style="font-family: Montserrat, sans-serif;font-weight: 500;">Schedule<br></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#challenges" style="font-family: Montserrat, sans-serif;font-weight: 500;">Project Tracks<br></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#faq" style="font-family: Montserrat, sans-serif;font-weight: 500;">FAQ</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#resources" style="font-family: Montserrat, sans-serif;font-weight: 500;">Resources</a></li>
                 </ul>
-        </div>
-        <div class="collapse navbar-collapse d-xl-flex justify-content-xl-end" id="navcol-2" style="font-family: Bungee, cursive;width: 40px;">
-            <div class="btn-group float-right" role="group"><a class="btn btn-primary border-light" role="button" style="background-color: #56c9c1;font-family: Bungee, cursive;" href="https://hack-like-w-cc.devpost.com/">Devpost</a><a class="btn btn-primary border-light" role="button" style="background-color: #cb6ce6;font-family: Bungee, cursive;"
-                    href="https://join.slack.com/t/hacklikewcchackathon/shared_invite/enQtODExMTQ0MzQxODU4LTRiZjY4MWVhNjRlY2M4M2YyNWRjZWY4ZDg2Nzc5NGY0ZmE5MjgxYTM3N2UxZWJhNDk1ZjE0NWQ1YzBiMzU3NjU">Slack</a></div>
-        </div>
+            </div>
         </div>
     </nav>
-    <div class="jumbotron border-dark" style="background-image: url(&quot;assets/img/sports.png&quot;);background-size: contain;background-repeat: repeat;opacity: 1;filter: blur(0px) grayscale(0%);padding: 15% 32px;min-height: 500px;">
-        <h1 class="display-1 text-center" style="background-color: rgba(255,255,255,0);font-family: 'Bungee Inline', cursive;">Hack Like W@CC</h1>
-        <h2 class="text-center" style="font-family: Bungee, cursive;">Women, Sport &amp; Technology&nbsp;<br></h2>
-        <h3 class="text-center" style="font-family: Bungee, cursive;color: rgb(247,41,103);">Postponed Fall 2020<br></h3>
-        <p class="text-center" style="font-family: Bungee, cursive;font-size: 26px;"></p>
-        <p class="text-center"><a class="btn btn-primary border-light" role="button" style="background-color: #56c9c1;font-family: Bungee, cursive;" href="https://hack-like-w-cc.devpost.com/">Devpost</a><a class="btn btn-primary border-light" role="button" style="background-color: #cb6ce6;font-family: Bungee, cursive;margin: 0px 15px;"
-                href="https://join.slack.com/t/hacklikewcchackathon/shared_invite/enQtODExMTQ0MzQxODU4LTRiZjY4MWVhNjRlY2M4M2YyNWRjZWY4ZDg2Nzc5NGY0ZmE5MjgxYTM3N2UxZWJhNDk1ZjE0NWQ1YzBiMzU3NjU">Slack</a></p>
-    </div>
-    <div class="align-items-center align-content-center justify-content-md-center" style="background-color: rgba(255,255,255,0);color: rgb(0,0,0);padding: 0px 10%;">
-        <h2 class="text-center" id="about" style="font-family: 'Bungee Inline', cursive;margin: 0px 8px 8px 8px;background-color: rgba(255,255,255,0);color: rgb(0,0,0);">About</h2>
-        <p class="text-center" style="font-family: Arvo, serif;color: rgb(0,0,0);font-size: 24px;"><br>The histories of women in computing and women in sports often parallel each&nbsp;other as we vie for visibility and equity.&nbsp; The challenge is simple: Design and build technology sports&nbsp;solutions or products for female athletes, teams,
-            and fans.<br><br></p>
-    </div>
-    <div class="align-items-center align-content-center justify-content-md-center" style="padding: 28px 10%;background-color: rgba(255,222,89,0.5);">
-        <h2 class="text-center" id="schedule" href="#" style="font-family: 'Bungee Inline', cursive;margin: 0px 0px 8px;">Schedule</h2>
-        <div class="table-responsive" style="background-color: rgba(255,255,255,0.8);font-family: Arvo, serif;">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th class="text-center" style="font-size: 24px;font-family: Bungee, cursive;"><strong>Friday</strong><br></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>4:00 PM</td>
-                        <td>Student Registration &amp; Team Formation<br></td>
-                        <td>The Garage<br></td>
-                    </tr>
-                    <tr>
-                        <td>5:00 PM</td>
-                        <td>Dinner</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>5:30 PM</td>
-                        <td>Opening Ceremonies &amp; Sponsor Introductions<br></td>
-                        <td>The Garage<br></td>
-                    </tr>
-                    <tr>
-                        <td>6:00 PM</td>
-                        <td>Hacking Begins!<br></td>
-                        <td></td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td>6:00 PM - 6:30 PM</td>
-                        <td>Rewriting The Code with Jade Barrialli&nbsp;</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>7:00 PM - 8:15 PM</td>
-                        <td>Introduction to Web Development with Alexandra Marlette</td>
-                        <td></td>
-                    </tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr>
-                        <td>8:30 PM - 9:30 PM<br></td>
-                        <td>Equifax Knockout Brain Teaser Tournament<br></td>
-                        <td><br></td>
-                    </tr>
-                    <tr>
-                        <td>9:45 PM - 10:45 PM</td>
-                        <td>Data Visualization Using D3 with Alexandra Marlette</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>9:00 PM<br></td>
-                        <td>Sweet Hut Boba Break</td>
-                        <td>The Garage<br></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="text-center" style="font-size: 24px;font-family: Bungee, cursive;">Saturday</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>12:00 AM<br></td>
-                        <td>Midnight Snack <br></td>
-                        <td>The Garage<br></td>
-                    </tr>
-                    <tr>
-                        <td> 8:00 AM </td>
-                        <td>Breakfast</td>
-                        <td>The Garage<br></td>
-                    </tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr>
-                        <td> 1:00 PM <br></td>
-                        <td>Lunch<br></td>
-                        <td> The Garage<br></td>
-                    </tr>
-                    <tr>
-                        <td> 6:00 PM<br></td>
-                        <td> Project Submission Due<br></td>
-                        <td><br></td>
-                    </tr>
-                    <tr>
-                        <td> 6:15 PM<br></td>
-                        <td>Dinner<br></td>
-                        <td> The Garage<br></td>
-                    </tr>
-                    <tr>
-                        <td>7:00 - 8:30 PM<br></td>
-                        <td>Project Expo &amp; Judging<br></td>
-                        <td><br></td>
-                    </tr>
-                    <tr>
-                        <td>8:45 - 9:30 PM </td>
-                        <td> Closing Ceremonies &amp; Awards </td>
-                        <td> The Garage </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <p class="text-center" style="font-family: Arvo, serif;"><br></p>
-    </div>
-    <div style="padding: 28px 10%;font-family: Arvo, serif;">
-        <h2 class="text-center" id="challenges" style="font-family: 'Bungee Inline', cursive;margin: 0px 8px 8px 8px;background-color: rgba(255,255,255,0);color: rgb(0,0,0);">Challenges</h2>
-        <div class="row" style="margin: 15px 0px 0px;">
-            <div class="col" style="background-color: rgba(201,226,101,0.1);padding: 15px;">
-                <h4 class="text-center"><strong>Fan Experience</strong></h4>
-                <p class="text-center" style="font-size: 12px;">Fans are at the center of a sports team’s success. Dedicated fans bring in revenue which can be used to improve player facilities, recruit better players, and fund fan-friendly additions…all of which attract more fans. Regardless of the
-                    status of the team or players, improving fan experience is a priority, and technology is a great way to do so. This category consists of anything from digital marketing campaigns to improved mobile applications/websites from scoring
-                    to easier ticket downloads. Simulations and immersive fan experiences using augmented/virtual reality are becoming more popular, and the search for an expedited sporting event entrance is forever ongoing using touch ID or computer
-                    vision. Anything that affects a fan positively or brings in new fans fits into this category. Think outside the box as the average fan will interact with several different industries.<br></p>
-                <h4 class="text-center"><strong>Sponsored By</strong></h4><img class="d-block d-xl-flex align-items-xl-center" style="max-width: 150px;margin: auto;" src="assets/img/GTSoftball-03.png" alt="Georgia Tech Softball"></div>
-            <div class="col justify-content-center" style="background-color: rgba(239,83,79,0.1);padding: 15px;">
-                <h4 class="text-center"><strong>Data Analysis</strong></h4>
-                <p class="text-center" style="font-size: 12px;">Data easily goes hand-in-hand with performance. Information collected via performance technologies, such as the ones mentioned in the above section, can then be analyzed and organized in a way to further help the athlete. Perhaps, an athlete
-                    wants to track her collected muscles movements over time to see how her training is affecting her technique…is she improving or making matters worse? Should she step up her training or is she overexerting herself and increasing her
-                    chance of injury? While there is an abundance of data tied in with performance technology, there are several other possibilities within this category. Sports venues need to track their ticket/merchandise sells versus expenses, team
-                    managers and coaches need to keep statistics on their players during practices and games, and fans stay engaged with real-time play-by-play analysis and fantasy brackets.<br><br></p>
-                <h4 class="text-center"><strong>Sponsored By</strong></h4><img class="d-block d-xl-flex align-items-xl-center" src="assets/img/travelerslogopink.png" style="max-width: 150px;margin: auto;" alt="traverlers insurence"></div>
-        </div>
-        <div class="row" style="margin: 0px 0px 15px;">
-            <div class="col" style="background-color: rgba(92,225,230,0.1);padding: 15px;">
-                <h4 class="text-center"><strong>Athletic Performance</strong></h4>
-                <p class="text-center" style="font-size: 12px;">Technology has become just as ingrained in sports as it has with every other part of our&nbsp;world. When it comes to sports performance, simulations track ball trajectory, wearable technology maps muscle movement, mobile apps tailor practice
-                    routines to specific&nbsp;players…the list goes on and on. There is so much room for further research and creativity&nbsp;within sports performance. However, how much of the athlete population will be able to use the latest technology
-                    to enhance their training? Technology has the power to give one athlete an edge over another simply due to a difference in provided resources. So perhaps an even&nbsp;bigger challenge within performance, is finding a way to close this
-                    gap in availability. Create&nbsp;technology that aids performance for all athletes.</p>
-                <h4 class="text-center"><strong>Sponsored By</strong></h4><img class="d-block d-xl-flex align-items-xl-center" src="assets/img/mslogo_color.png" style="max-width: 150px;margin: auto;" alt="traverlers insurence"></div>
-            <div class="col" style="background-color: rgba(203,108,230,0.1);padding: 15px;">
-                <h4 class="text-center"><strong>Activity &amp; Engagement</strong><br></h4>
-                <p class="text-center" style="font-size: 12px;">For many sports fans, women’s sports have always taken a backseat to men’s sports. Though interest has improved greatly within the past few decades, it is still nowhere close to catching up to the popularity of male sporting events. The
-                    initial problem to solve is continuing to interest more girls in sports at an early age. This includes increasing female access to sports by creating more opportunities for them to attend sporting events, meet female athletes, and
-                    participate in camps or individual lessons. Another side to this issue is increasing awareness of the general public. Many sport enthusiasts are well-informed on the stats and backstory of the most popular male athletes but cannot
-                    name the female sports teams present in their own city. Improved marketing to a younger age group could hopefully create interest in female sports at a younger age that could carry-on throughout their lives.<br></p>
-                <h4 class="text-center"><strong>Sponsored By</strong></h4><img class="d-block d-xl-flex align-items-xl-center" src="assets/img/wm_inline_rgb_pos_color.png" style="max-width: 150px;margin: auto;" alt="traverlers insurence"></div>
-        </div>
-        <hr>
-        <div class="col-md-12 justify-content-center" style="background-color: #fbfbfb;padding: 15px;">
-            <h4 class="text-center"><strong>Equifax Knockout Brain Teaser Tournament</strong><br></h4>
-            <p class="text-center" style="font-size: 12px;">Brain power on 100%? Good. You'll need it. Individually compete in challenges and brain teasers to <strong>KNOCKOUT </strong>the competition and claim the grand prize. Think you've got what it takes?<br>Bring it!<br>&nbsp;<br><span style="text-decoration: underline;">First place:</span>                $50 Amazon gift card, Boxing Gloves &amp; Equifax shirt<br><span style="text-decoration: underline;">Second Place</span>: $25 Amazon gift card and Equifax shirt<br></p>
-            <h4 class="text-center"><strong>Sponsered By</strong></h4><img class="d-block justify-content-center" style="max-width: 150px;margin: auto;" src="assets/img/Equifax_er_4c_11x2.25inches_300dpi.png" alt="Equifax"></div>
-    </div>
-    <div style="background-color: rgba(255,222,89,0.5);padding: 28px 10%;">
-        <h2 class="text-center" id="faq" style="font-family: 'Bungee Inline', cursive;margin: 0px 8px 8px 8px;background-color: rgba(255,255,255,0);color: rgb(0,0,0);">FAQ</h2>
-        <div class="row">
-            <div class="col">
-                <ul class="list-unstyled">
-                    <li class="text-left"><strong>What is a hackathon?</strong><br> A hackathon is where you turn your ideas into real stuff!<br></li>
-                    <li class="text-left"><strong>Who can apply?</strong><br>All GT female-identifying undergraduate and graduate&nbsp;students are welcome to attend.<br></li>
-                    <li class="text-left"><strong>What if I don't know how to code?</strong><br>Experience isn't required! Hackathons are a place to learn, for anybody at any level. We'll even have&nbsp;mentors&nbsp;to assist and mentor you as you work on your project.&nbsp;<br></li>
-                    <li
-                        class="text-left"><strong>Teams?</strong><br>You can work in a team of up to four but all applications have to be submitted on an individual basis. Teams will be checked when you submit your project.<br></li>
-                        <li class="text-left"><strong>What if I don't have an idea or a team?</strong><br>Don't worry! There will be time to form teams after registration, and we will help you match with other hackers.<br></li>
-                        <li class="text-left"><strong>What should I bring?</strong><br> All you need is a student ID, a laptop + charger, and your <br>hacking spirit! We'll take care of the rest. Firearms, weapons, alcohol, illegal drugs, and power tools are not allowed. Smiles
-                            and high-fives are welcome.<br></li>
-                </ul>
+    <div class="jumbotron" style="background-color: #f7f7f7;">
+        <div class="container hero" data-aos="fade-up" data-aos-once="true">
+            <div class="row">
+                <div class="col-12 col-lg-10 col-xl-12 offset-xl-0">
+                    <h1 class="display-3" style="font-family: Montserrat;font-weight: 900;/*font-size: 54px;*/">Hack Like W@CC</h1>
+                    <h1 style="font-family: Montserrat;color: #ce4257;font-weight: 700;/*font-size: 34px;*/">Equality in Technology</h1>
+                    <h4 style="font-family: Montserrat;font-style: medium;">October 2nd - 9th</h4><button class="btn btn-light btn-lg action-button" type="button" style="background-color: #ce4257;font-family: Montserrat, sans-serif;font-weight: 900;border-radius: 39px;color: #FFFFFF;/*width: 178px;*/border-width: 0;">Registration Opens Sep. 11th<br></button></div>
             </div>
-            <div class="col">
-                <ul class="list-unstyled">
-                    <li><strong>What can I make?</strong><br> Anything you want!<br></li>
-                    <li class="text-left"><strong>What about hardware and tools?</strong><br>Bring anything you like and just check it with us. We will also have some company sponsored API’s and datasets.<br></li>
-                    <li class="text-left"><strong>Can I start work on my hack before the event?</strong><br>No, All work on your hacks must be done during the 24 hour event. Ideas may be generated beforehand. The rule is strictly enforced at and the penalty for a project from
-                        before the event is disqualification. However, feel free to use any libraries or tools.<br></li>
-                    <li class="text-left"><strong>What does it cost?</strong><br> The event is free, thanks so support from our sponsors!<br></li>
-                    <li class="text-left"><strong>What about food?</strong><br> Check the schedule for times but yes, free food will be <br>provided throughout the event. You just have to show your wristband from&nbsp;registration when you grab a plate.<br></li>
-                    <li class="text-left"><strong>Prizes?</strong><br>Of course! There will be a grand prize.<br></li>
-                </ul>
+            <div class="row">
+                <div class="col-12 col-lg-9 col-xl-8 offset-xl-0 brands" style="background-color: rgba(255,255,255,0);padding: 0;">
+                    <h4 class="text-left" style="font-family: Montserrat;font-style: medium;padding: 0;padding-top: 15px;padding-left: 15px;font-weight: 800;color: #000000;"><strong>Sponsored By</strong><br></h4>
+                    <div class="carousel slide" data-ride="carousel" id="carousel-2">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"><a href="#" style="padding: 0;text-align: left;"> <img src="assets/img/The-Travelers-Companies-logo-e1446753164174.png" alt="Travelers Insurance logo"><img src="assets/img/GTAthletics.png" alt="Georgia Tech Athletics"></a></div>
+                            <div class="carousel-item"><a href="#" style="padding: 0;text-align: left;"> <img src="assets/img/mslogo.png" alt="Microsoft Logo"><img src="assets/img/blackrock.png" style="max-width: 200px;" alt="Blackrock Logo"></a></div>
+                            <div class="carousel-item"><a href="#" style="padding: 0;text-align: left;"> <img src="assets/img/ncrlogo.png" alt="NCR logo"></a></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-2" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-2" data-slide-to="1"></li>
+                            <li data-target="#carousel-2" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                    <div></div>
+                </div>
             </div>
         </div>
     </div>
-    <div style="padding: 28px 10%;">
-        <h2 class="text-center" id="resources" style="font-family: 'Bungee Inline', cursive;margin: 0px 8px 8px 8px;background-color: rgba(255,255,255,0);color: rgb(0,0,0);">Resources</h2>
-        <div class="row">
-            <div class="col" style="background-color: rgba(203,108,230,0.05);">
-                <h3 class="text-center d-xl-flex justify-content-xl-center" style="font-family: Bungee, cursive;background-color: #cb6ce6;color: rgb(255,255,255);padding: 8px 0px;"><i class="fa fa-wrench d-xl-flex justify-content-xl-center" style="font-size: 28px;"></i>&nbsp;Tools&nbsp;<i class="fa fa-wrench d-xl-flex justify-content-xl-center" style="font-size: 28px;color: rgb(255,255,255);"></i></h3>
-                <ul>
-                    <li class="text-left"><a href="https://education.github.com/pack">GitHub Student Pack</a><br> A free resource pack from GitHub.<br></li>
-                    <li class="text-left"><a href="https://ngrok.com/">ngrok</a><br>A reverse tunnel. Run a server locally in any language and give it a public domain. Great for testing and demoing.<br></li>
-                    <li class="text-left"><a href="https://browsersync.io/">BrowserSync</a><br>Time synced browser testing. Useful when sharing a design to teammates and on multiple devices. Usually used with gulp or grunt.<br></li>
-                    <li class="text-left"><a href="https://developer.amazon.com/alexa-skills-kit">Alexa Skills Kit</a><br>Voice enable any app or service with Amazon Alexa.<br></li>
-                    <li class="text-left"><a href="https://justgetflux.com/">F.lux</a><br>Save your eyes from blue light eye strain.<br></li>
-                    <li class="text-left"><a href="https://origami.design/">Origami (mac)</a><br>A free tool from Facebook for designing modern interfaces and interactions.<br></li>
-                    <li class="text-left"><a href="https://www.vagrantup.com/"><span style="text-decoration: underline;">Vagrant</span></a><br>Create and configure reproducible, portable, lightweight development environments.<br></li>
-                    <li class="text-left"><a href="https://studio3t.com/download/">Studio 3T</a><br>A GUI to make navigating MongoDB quicker and easier<br></li>
-                </ul>
-            </div>
-            <div class="col" style="background-color: rgba(92,225,230,0.1);">
-                <h3 class="text-center d-xl-flex justify-content-xl-center" style="font-family: Bungee, cursive;color: rgb(255,255,255);background-color: #5ce1e6;padding: 8px 0px;"><i class="fa fa-code d-xl-flex justify-content-xl-center" style="font-size: 28px;"></i>&nbsp;Code&nbsp;<i class="fa fa-code d-xl-flex justify-content-xl-center" style="font-size: 28px;"></i></h3>
-                <ul>
-                    <li class="text-left"><a href="https://codepen.io/">Code Pen</a><br> An HTML/CSS/JavaScript code editor in your browser with instant previews and tons of snippets and inspiration.<br></li>
-                    <li class="text-left"><a href="https://codyhouse.co/">Cody House</a><br> A free library of HTLML, CSS, and JS nuggets with tutorials.<br></li>
-                    <li class="text-left"><a href="http://ianlunn.github.io/Hover/">Hover</a><br> A CSS3 Animation hover effects library.<br></li>
-                    <li class="text-left"><a href="https://startbootstrap.com/">Start Bootstrap</a><br> Free Bootstrap starter templated for different types of sites.<br></li>
-                    <li class="text-left"><a href="https://bootsnipp.com/">Boot Snipp</a><br> Free Bootstrap code snippets for design elements.<br></li>
-                </ul>
+    <section data-aos="fade-up" data-aos-once="true" id="about" style="padding-top: 30px;">
+        <div class="header">
+            <div class="container gen" style="text-align: center;">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-12 brands">
+                        <h1 class="text-center" style="font-weight: 900;text-align: left;color: #000000;">About<br></h1>
+                        <p class="text-center" style="font-family: Roboto, sans-serif;font-size: 20px;text-align: left;color: #000000;">Throughout time,&nbsp;women have been using their ingenuity and tenacity to&nbsp;vie for visibility and equity, especially in areas where STEM is concerned. The challenge is simple: Design and build technology&nbsp;or solutions
+                            that address gender disparities&nbsp;and&nbsp;encourage&nbsp;female empowerment&nbsp;in the following areas: education, healthcare, sports,&nbsp;the&nbsp;workforce/business sector.&nbsp;<br><strong>Open to all female-identifying students at GT</strong><br></p>
+                        <h4
+                            class="text-center" style="font-family: Montserrat;font-style: medium;padding: 0;padding-top: 15px;padding-left: 15px;font-weight: normal;color: #000000;"><strong>Hosted By</strong><br></h4><a class="text-center" href="#" style="padding: 0;text-align: left;"> <img src="assets/img/waCClogo.png"><img src="assets/img/gt_coc.png"></a></div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col" style="background-color: rgba(239,83,79,0.1);">
-                <h3 class="text-center d-xl-flex justify-content-xl-center" style="font-family: Bungee, cursive;color: rgb(255,255,255);background-color: #ef534f;padding: 8px 0px;"><i class="fa fa-pencil d-xl-flex justify-content-xl-center" style="font-size: 28px;"></i>&nbsp;Design&nbsp;<i class="fa fa-pencil d-xl-flex justify-content-xl-center" style="font-size: 28px;"></i></h3>
-                <ul>
-                    <li class="text-left"><a href="http://graphicburger.com/">Graphic Burger</a><br> An array of design resources such as mockups, UI kits, icons, backgrounds, etc.<br></li>
-                    <li class="text-left"><a href="http://100daysoffonts.com/">100 Days of Fonts</a><br> A great place to find beautiful combinations and usages of Google Fonts and color schemes.<br></li>
-                    <li class="text-left"><a href="https://pttrns.com/">Pttrns</a><br> Same as Pattern Tap, but for mobile design patterns. (iOS and Android)<br></li>
-                    <li class="text-left"><a href="http://uxarchive.com/">UX Archive</a><br> Can't figure out the best user flow for your mobile hack? UX Archive lists just about every flow or user task from the best apps.<br></li>
-                    <li class="text-left"><a href="https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b">Stock Photos That Don't Suck</a><br> An ongoing list of the best stock photo sites.<br></li>
-                    <li class="text-left"><a href="http://uifaces.com/">User Inter Faces</a><br> A database of profile pictures for mockups and demos.<br></li>
-                </ul>
-            </div>
-            <div class="col" style="background-color: rgba(201,226,101,0.1);">
-                <h3 class="text-center d-xl-flex justify-content-xl-center" style="font-family: Bungee, cursive;color: rgb(255,255,255);background-color: #c9e265;padding: 8px 0px;"><i class="fa fa-font-awesome d-xl-flex justify-content-xl-center" style="font-size: 28px;"></i>&nbsp;ICONS&nbsp;<i class="fa fa-font-awesome d-xl-flex justify-content-xl-center" style="font-size: 28px;"></i></h3>
-                <ul>
-                    <li class="text-left"><a href="https://cchackathon.github.io/geta-moveon/fontawesome.io">Font Awesome</a><br> Font and CSS toolkit with 675 icons to use in your designs.<br></li>
-                    <li class="text-left"><a href="https://thenounproject.com/">The Noun Project</a><br> Thousands of amazing, detailed icons useful for your hacks.<br></li>
-                    <li class="text-left"><a href="https://iconmonstr.com/">Icon Monstr</a><br> Icon sets for just about anything.<br></li>
-                </ul>
+    </section>
+    <section data-aos="fade-up" data-aos-once="true" id="schedule" style="padding-top: 30px;">
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 style="font-weight: 900;text-align: center;">Schedule<br></h1>
+                        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <h1 style="font-weight: 500;text-align: center;font-size: 32px;">Monday<br></h1>
+                                    <div class="table-responsive" style="padding-bottom: 20px;">
+                                        <table class="table">
+                                            <thead class="table-header">
+                                                <tr>
+                                                    <th>Time</th>
+                                                    <th>Event</th>
+                                                    <th>Location</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h1 style="font-weight: 500;text-align: center;font-size: 32px;">Tuesday<br></h1>
+                                    <div class="table-responsive" style="padding-bottom: 20px;">
+                                        <table class="table">
+                                            <thead class="table-header">
+                                                <tr>
+                                                    <th>Time</th>
+                                                    <th>Event</th>
+                                                    <th>Location</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h1 style="font-weight: 500;text-align: center;font-size: 32px;">Wednesday<br></h1>
+                                    <div class="table-responsive" style="padding-bottom: 20px;">
+                                        <table class="table">
+                                            <thead class="table-header">
+                                                <tr>
+                                                    <th>Time</th>
+                                                    <th>Event</th>
+                                                    <th>Location</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h1 style="font-weight: 500;text-align: center;font-size: 32px;">Thursday<br></h1>
+                                    <div class="table-responsive" style="padding-bottom: 20px;">
+                                        <table class="table">
+                                            <thead class="table-header">
+                                                <tr>
+                                                    <th>Time</th>
+                                                    <th>Event</th>
+                                                    <th>Location</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h1 style="font-weight: 500;text-align: center;font-size: 32px;">Friday<br></h1>
+                                    <div class="table-responsive" style="padding-bottom: 20px;">
+                                        <table class="table">
+                                            <thead class="table-header">
+                                                <tr>
+                                                    <th>Time</th>
+                                                    <th>Event</th>
+                                                    <th>Location</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:59 PM</td>
+                                                    <td>Coming Soon</td>
+                                                    <td>Online!</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><i class="fa fa-chevron-left carousel-control-prev-icon" style="color: #ce4257;font-size: 32px;"></i><span class="sr-only">Previous</span></a>
+                                <a
+                                    class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><span class="sr-only">Next</span><i class="fa fa-chevron-right carousel-control-next-icon" style="color: #ce4257;font-size: 32px;"></i></a>
+                            </div>
+                            <ol class="carousel-indicators" style="/*background-color: #ce4257;*/border-radius: 39px;">
+                                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-1" data-slide-to="1"></li>
+                                <li data-target="#carousel-1" data-slide-to="2"></li>
+                                <li data-target="#carousel-1" data-slide-to="3"></li>
+                                <li data-target="#carousel-1" data-slide-to="4"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div></div>
-    </div>
-    <div class="map-clean" style="background-color: #ffeeab;padding: 28px 10%;">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center" id="location" style="font-family: 'Bungee Inline', cursive;">Join us at The Garage!<br></h2>
-                <p class="text-center"></p>
+    </section>
+    <section id="challenges-1" style="padding-top: 30px;">
+        <div data-aos="fade-up" data-aos-once="true" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 style="font-weight: 900;text-align: center;">Project Tracks<br></h1>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col" style="padding-right: 55px;padding-left: 55px;">
+                        <div class="card-group">
+                            <div class="card challenges-cards">
+                                <div class="card-body" style="border-radius: 15px;/*border-color: #ce4257;*//*background-color: rgba(243,227,230,0.25);*/"><i class="fa fa-graduation-cap d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center" style="font-size: 52px;color: #ce4257;"></i>
+                                    <h4 class="text-center card-title" style="font-family: Roboto, sans-serif;font-weight: bold;">Education<br></h4>
+                                    <p class="card-text" style="text-align: center;font-family: Roboto, sans-serif;font-weight: normal;">Education is the key to a lifetime of learning.&nbsp;Recent strides have been made to ensure&nbsp;gender parity within the education sector, however there are still many&nbsp;challenges and&nbsp;stigmas&nbsp;that prevail.&nbsp;&nbsp;The
+                                        challenge is simple: design solutions or products to address gaps in educational resources, community education,&nbsp;career advancement, or&nbsp;pathways to access for all age groups and socio-economic backgrounds.<br><br></p>
+                                </div>
+                            </div>
+                            <div class="card challenges-cards" style="background-color: rgb(252,242,243);">
+                                <div class="card-body"><i class="fa fa-plus d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center" style="font-size: 52px;color: #ce4257;text-align: center;"></i>
+                                    <h4 class="text-center card-title"
+                                        style="font-family: Roboto, sans-serif;font-weight: bold;">Healthcare</h4>
+                                    <p class="card-text" style="font-family: Roboto, sans-serif;font-weight: normal;text-align: center;">Many societal gender norms and life experiences limit access to necessary healthcare resources. Gender and racial biases also contribute to some health concerns being trivialized. Mitigating the lack of representation
+                                        of women in medical research and normalizing issues facing women’s health could revolutionize of the way we utilize medical technology.&nbsp;The challenge is simple: design solutions or products to assist in overcoming
+                                        the challenges in female healthcare.&nbsp;Consider reproductive health, hygiene, wellness tracking, fitness engagement, childcare/eldercare, communications with physicians, or other ideas as you consider girls and
+                                        women in your communities. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-group">
+                            <div class="card challenges-cards" style="background-color: #fcf2f3;">
+                                <div class="card-body" style="background-color: #fcf2f3;border-radius: 15px;"><i class="fa fa-briefcase d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center" style="font-size: 52px;color: #ce4257;"></i>
+                                    <h4 class="text-center card-title" style="font-family: Roboto, sans-serif;font-weight: bold;">Workforce</h4>
+                                    <p class="card-text" style="font-family: Roboto, sans-serif;text-align: center;">Data and statistics can provide important insight into the state, success, or well-being of a system or a company. Regularly looking into data can also ensure that a company is being inclusive, cost effective, or productive.
+                                        Communicating data to the masses can be an important feat, as it informs many of the decision’s companies make on the day to day, like who to hire for instance, and what initiatives to invest in. The challenge is
+                                        simple: design and build solutions or products to help employers and employees focus on success in the workplace including but not limited to employee resource groups, measurement of group initiatives, employee
+                                        well-being and happiness, and workplace diversity.</p>
+                                </div>
+                            </div>
+                            <div class="card challenges-cards" style="margin: 10px;background-color: #fcf2f3;">
+                                <div class="card-body" style="border-radius: 15px;background-color: #fcf2f3;"><i class="fas fa-trophy d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center" style="font-size: 52px;color: #ce4257;"></i>
+                                    <h4 class="text-center card-title" style="font-family: Roboto, sans-serif;font-weight: bold;">Sports</h4>
+                                    <p class="card-text" style="font-family: Roboto, sans-serif;text-align: center;">The histories of women in computing and women in sports often parallel each other as we vie for visibility and equity.&nbsp;The challenge is simple: Design and build technology sports solutions or products for female
+                                        athletes, teams, and fans.&nbsp;This may include the use of data analytics to improve athlete performance in training and competition.&nbsp;Or it could be utilizing digital marketing or mobile development for fan
+                                        experience.&nbsp;Or help engage young girls and women at an earlier age to participate so they can see themselves competing, coaching, managing, leading, owning, and so much more in their futures. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.3257704318926!2d-84.39120724898868!3d33.77808468058659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50466e037a09d%3A0x3e65f8f7555f99ca!2sThe%20Garage%20at%20Tech%20Square!5e0!3m2!1sen!2sus!4v1573051806345!5m2!1sen!2sus"></iframe></div>
-    </div>
-    <div style="background-color: #ffffff;padding: 28px 10%;">
-        <h2 class="text-center" id="sponsers" style="font-family: 'Bungee Inline', cursive;margin: 0px 8px 8px 8px;background-color: rgba(255,255,255,0);color: rgb(0,0,0);">Sponsors</h2>
-        <div class="row justify-content-center">
-            <div class="col text-center d-xl-flex justify-content-xl-center align-items-xl-center"><img style="max-width: 150px;" src="assets/img/cisco_systems_logo_reflection.png" alt="Cisco"></div>
-            <div class="col text-center d-xl-flex justify-content-xl-center align-items-xl-center"><img style="max-width: 150px;" src="assets/img/Equifax_er_4c_11x2.25inches_300dpi.png" alt="Equifax"></div>
-            <div class="col text-center d-xl-flex justify-content-xl-center align-items-xl-center"><img style="max-width: 150px;" src="assets/img/mastercard%20logo.png" alt="Mastercard"></div>
-            <div class="col text-center d-xl-flex justify-content-xl-center align-items-xl-center"><img class="d-block" src="assets/img/mslogo.png" style="max-width: 150px;margin: auto;" alt="Microsoft"></div>
-            <div class="col-lg-3 text-center d-xl-flex justify-content-xl-center align-items-xl-center"><img class="d-block" src="assets/img/NCR%20Brand%20Block%20Logo%20JPG.JPG" style="max-width: 100px;margin: auto;" alt="NCR"></div>
-            <div class="col d-xl-flex justify-content-xl-center align-items-xl-center"><img class="d-block" src="assets/img/travelerslogo.png" style="max-width: 150px;margin: auto;" alt="Travelers Insurence"></div>
-            <div class="col-lg-3"><img class="d-block" src="assets/img/GTAthletics-02-02.png" style="max-width: 150px;margin: auto;" alt="Georgia Tech Athletics"></div>
-            <div class="col"><img class="d-block" src="assets/img/Hewlett_Packard_Enterprise_logo.svg" style="max-width: 150px;margin: auto;margin-top: 15px;" alt="Hewlett Packard Enterprise"></div>
-            <div class="col"><img class="d-block d-xl-flex" src="assets/img/wm_inline_rgb_pos.jpg" style="max-width: 150px;margin: auto;margin-top: 45px;" alt="Hewlett Packard Enterprise"></div>
+    </section>
+    <section id="faq" style="padding-top: 30px;margin-top: 20px;">
+        <div data-aos="fade-up" data-aos-once="true" class="header" style="background-color: #f7f7f7;padding-top: 40px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 style="font-weight: 900;text-align: center;">FAQ<br></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card-group">
+                            <div class="card" style="padding: 0;margin: 10px;border-radius: 4px;border-width: 0px;border-color: #ce4257;background-color: rgba(255,255,255,0);">
+                                <div class="card-body" style="border-radius: 4px;border-color: #ce4257;">
+                                    <p class="card-text" style="text-align: left;font-family: Roboto, sans-serif;font-weight: normal;"><strong>What is a hackathon?</strong><br>A hackathon is where you turn your ideas into real stuff!<br><br><strong>Who can apply?</strong><br>All GT female-identifying undergraduate and graduate students are welcome
+                                        to attend.<br><br><strong>What if I don't know how to code?</strong><br>Experience isn't required! Hackathons are a place to learn, for anybody at any level. We'll even have mentors to assist and mentor you as you
+                                        work on your project. <br><br><strong>Teams?</strong><br>You can work in a team of up to four but all applications have to be submitted on an individual basis. Teams will be checked when you submit your project.<br><br><strong>What if I don't have an idea or a team?</strong><br>Don't
+                                        worry! There will be time to form teams after registration, and we will help you match with other hackers.<br></p>
+                                </div>
+                            </div>
+                            <div class="card" style="margin: 10px;border-radius: 4px;border: 0px solid #ce4257;background-color: rgba(255,255,255,0);">
+                                <div class="card-body" style="border: 0px solid #ce4257 ;">
+                                    <p class="card-text" style="font-family: Roboto, sans-serif;font-weight: normal;text-align: left;"><strong>What can I make?</strong><br>Anything you want!<br><br><strong>What about hardware and tools?</strong><br>Bring anything you like and just check it with us. We will also have some company sponsored API’s and
+                                        datasets.<br><br><strong>Can I start work on my hack before the event?</strong><br>No, All work on your hacks must be done during the multi-day event. Ideas may be generated beforehand. The rule is strictly enforced
+                                        at and the penalty for a project from before the event is disqualification. However, feel free to use any libraries or tools.<br><br><strong>What does it cost?</strong><br>The event is free, thanks so support from
+                                        our sponsors!<br><br><strong>Prizes?</strong><br>Of course! There will be a grand prize.<br><br><strong>What should I bring?</strong><br>Whatever you can use in your house to hack, so a laptop and any hardware you
+                                        already own<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <section data-aos="fade-up" data-aos-once="true" style="padding-top: 30px;margin-top: 20px;">
+        <div id="resources" class="header" style="background-color: rgba(247,247,247,0);padding-top: 0x;">
+            <div class="container">
+                <div class="row">
+                    <div class="col" style="font-size: 20px;">
+                        <h1 style="font-weight: 900;text-align: center;">Resources<br></h1>
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item" style="width: 25%;"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">Tools</a></li>
+                                <li class="nav-item" style="width: 25%;padding-left: 5px;"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2" style="padding: 8px 0px;">Code</a></li>
+                                <li class="nav-item" style="width: 25%;padding-left: 5px;"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3" style="padding: 8px 0px;">Design</a></li>
+                                <li class="nav-item" style="width: 25%;padding-left: 5px;"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-4" style="padding: 8px 0px;">Icons</a></li>
+                            </ul>
+                            <div class="tab-content" style="background-color: #f7f7f7;padding: 25px;font-size: 16px;">
+                                <div class="tab-pane" role="tabpanel" id="tab-1">
+                                    <ul>
+                                        <li><a href="https://education.github.com/pack"><strong>GitHub Student Pack</strong> </a>- A free resource pack from GitHub<br></li>
+                                        <li><a href="https://www.figma.com"><strong>Figma</strong> </a>- A UI Mock up tool that work on Web, Mac,&nbsp;or Windows</li>
+                                        <li><a href="https://ngrok.com/"><strong>ngrok</strong> </a>- A reverse tunnel. Run a server locally in any language and give it a public domain. Great for testing and demoing<br></li>
+                                        <li><a href="https://browsersync.io/"><strong>BrowserSync </strong></a>- Time synced browser testing. Useful when sharing a design to teammates and on multiple devices. Usually used with gulp or grunt<br></li>
+                                        <li><a href="https://developer.amazon.com/alexa-skills-kit"><strong>Alexa Skills Kit</strong> </a>- Voice enable any app or service with Amazon Alexa<br></li>
+                                        <li><a href="https://justgetflux.com/"><strong>Flux</strong> </a>- Save your eyes from blue light eye strain.<br></li>
+                                        <li><a href="https://origami.design/"><strong>Origami (mac)</strong></a> - A free tool from Facebook for designing modern interfaces and interactions<br></li>
+                                        <li><a href="https://www.vagrantup.com/"><strong>Vagrant</strong> </a>- Create and configure reproducible, portable, lightweight development environments<br></li>
+                                        <li><a href="https://studio3t.com/download/"><strong>Studio 3T</strong></a> - A GUI to make navigating MongoDB quicker and easier</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="tab-2">
+                                    <ul style="font-family: Roboto, sans-serif;">
+                                        <li><a href="https://codepen.io/"><strong>Code Pen</strong></a>&nbsp;- An HTML/CSS/JavaScript code editor in your browser with instant previews and tons of snippets and inspiration.<br></li>
+                                        <li><a href="https://codyhouse.co/"><strong>Cody House</strong></a><strong>&nbsp;</strong> - A free library of HTLML, CSS, and JS nuggets with tutorials.<br></li>
+                                        <li><a href="http://ianlunn.github.io/Hover/"><strong>Hover</strong></a><strong>&nbsp;</strong>-&nbsp;A CSS3 Animation hover effects library.<br></li>
+                                        <li><a href="https://startbootstrap.com/"><strong>Start Bootstrap</strong></a>&nbsp;- Free Bootstrap starter templates for different types of sites.<br></li>
+                                        <li><a href="https://bootsnipp.com/"><strong>Boot Snipp</strong></a><strong>&nbsp;</strong>-&nbsp;Free Bootstrap code snippets for design elements.<br></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="tab-3">
+                                    <ul style="font-family: Roboto, sans-serif;">
+                                        <li><a href="http://graphicburger.com/"><strong>Graphic Burger</strong></a><strong>&nbsp;-&nbsp;</strong>An array of design resources such as mockups, UI kits, icons, backgrounds, etc.<br></li>
+                                        <li><a href="http://100daysoffonts.com/"><strong>100 Days of Fonts</strong></a><strong>&nbsp;-&nbsp;</strong>A great place to find beautiful combinations and usages of Google Fonts and color schemes.<br></li>
+                                        <li><a href="https://pttrns.com/"><strong>Pttrns</strong></a><strong>&nbsp;-&nbsp;</strong>Same as Pattern Tap, but for mobile design patterns. (iOS and Android)<br></li>
+                                        <li><a href="http://uxarchive.com/"><strong>UX Archive</strong></a>&nbsp;-&nbsp;Can't figure out the best user flow for your mobile hack? UX Archive lists just about every flow or user task from the best apps.<br></li>
+                                        <li><a href="https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b"><strong>Stock Photos That Don't Suck</strong></a><strong>&nbsp;-&nbsp;</strong>An ongoing list of the best stock photo sites.<br></li>
+                                        <li><a href="http://uifaces.com/"><strong>User Inter Faces</strong></a><strong>&nbsp;-&nbsp;</strong>A database of profile pictures for mockups and demos.<br></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane active" role="tabpanel" id="tab-4">
+                                    <ul style="font-family: Roboto, sans-serif;">
+                                        <li><a href="https://cchackathon.github.io/geta-moveon/fontawesome.io"><strong>Font Awesome</strong></a>&nbsp;-&nbsp;Font and CSS toolkit with 675 icons to use in your designs.<br></li>
+                                        <li><a href="https://thenounproject.com/"><strong>The Noun Project</strong></a><strong>&nbsp;-&nbsp;</strong>Thousands of amazing, detailed icons useful for your hacks.<br></li>
+                                        <li><a href="https://iconmonstr.com/"><strong>Icon Monstr</strong></a>&nbsp;-&nbsp;Icon sets for just about anything.<br></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://www.instagram.com/waccgt/" style="border-color: #ce4257;"><i class="fab fa-instagram" style="color: #ce4257;"></i></a><a href="http://www.women.cc.gatech.edu/" style="border-color: #ce4257;"><i class="fas fa-info-circle" style="border-color: #ce4257;color: #ce4257;"></i></a></div>
+            <ul
+                class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#about">About</a></li>
+                <li class="list-inline-item"><a href="#schdule">Schedule</a></li>
+                <li class="list-inline-item"><a href="#challenges">Challenges</a></li>
+                <li class="list-inline-item"><a href="#faq">FAQ</a></li>
+                <li class="list-inline-item"><a href="#resources">Resources</a></li>
+                </ul><footer class="text-center">
+          <div class="credits">
+            <span>©️</span>
+            <span class="current-year">(year)</span> Made with 
+                <i style="color: #ce4257" class="fa fa-heart heart"
+              alt="love">
+                </i> 
+                by 
+                <a href="https://www.amarlette.com" target="_blank"> Alexandra Marlette
+                </a>
+          </div>
+</footer></footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="assets/js/Footer---Made-with-love.js"></script>
 </body>
 
 </html>

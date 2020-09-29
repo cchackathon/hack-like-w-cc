@@ -270,3 +270,9 @@ html {
   background-color: #ce4257;
 }
 
+.card-footer, .card-group > .card:not(:last-child) .card-img-bottom {
+  min-height: 112px;
+  background: rgb(252,242,243);
+  border-style: none;
+}
+
